@@ -116,7 +116,7 @@ class Debugger
         if ($this->needToUpdateResponse($response)) {
             $data = $this->getResponseData($response);
 
-            iif ($data === false || !is_object($data)) {
+            if ($data === false || !is_object($data)) {
                 return;
             }
 
